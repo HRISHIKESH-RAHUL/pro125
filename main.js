@@ -3,7 +3,7 @@ rightWristX=0;
 difference=0;
 
 function setup(){
-    canvas = createCanvas(600,600);
+    canvas = createCanvas(500,500);
     canvas.center();
     video= createCapture(VIDEO);
     video.size(400,400);
@@ -27,6 +27,7 @@ function gotPoses(results){
 function draw(){
     background("#00ffff");
     textSize(difference);
+    document.getElementById("font_size").innerHTML= difference + "px"
     fill("#03a1fc");
     text("coder" , 10 , 300);
 }
