@@ -27,7 +27,7 @@ function gotPoses(results){
 function draw(){
     background("#00ffff");
     textSize(difference);
-    document.getElementById("font_size").innerHTML= difference + "px"
+    document.getElementById("font_size").innerHTML= "The font size might be: " +  difference + "px"
     fill("#03a1fc");
     text("coder" , 10 , 300);
 }
